@@ -67,7 +67,7 @@ axios.get(apiUrl).then(displayForecast);
 function displayForecast(response) {
     let forecastHtml = "";
 
-response.day.daily.forEach(function (day, index) {
+response.data.daily.forEach(function (day, index) {
     if (index < 5) {
     forecastHtml =
      forecastHtml +
